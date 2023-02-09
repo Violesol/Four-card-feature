@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.introduction {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.introduction h1{
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.introduction p{
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: max-content;
+    margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(234, 12%, 34%);    
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+}
+
+.card-info{
+    background-color: white;
+    padding: 40px 40px 20px 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 34px 6px rgba(163,165,174,0.33);
+    -webkit-box-shadow: 0px 0px 34px 6px rgba(163,165,174,0.33);
+    -moz-box-shadow: 0px 0px 34px 6px rgba(163,165,174,0.33);     
+}
+
+.card-info h2 {
+    font-size: 18px;
+}
+
+.card-info p {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 10px 0px 40px 0px;
+}
+
+.team-builder {
+    margin-bottom: 40px;
+}
+
+.icon {
+   text-align: right;   
+}
+
+.turquoise, .red, .blue, .orange {
+    height: 5px; 
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.turquoise {
+    background-color: hsl(180, 62%, 55%);   
+}
+
+.red {
+    background-color:hsl(0, 78%, 62%);
+}
+
+.blue{
+    background-color: hsl(212, 86%, 64%);
+}
+
+.orange {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.attribution {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5%;
+}
+
+/* MEDIAQUERYS*/
+
+@media screen and (max-width: 1023px) {
+
+    .introduction {
+        margin: auto;
+        padding-top: 5%;
+        width: 80%;
+    }
+
+    .cards-container{
+        flex-direction: column;
+    }
+    
+}
+    @media screen and (max-width: 480px){
+
+        .introduction {
+           
+            padding-top: 15%;
+        }
+        .introduction h1 {
+            font-size: 24px;
+        }
+    }
